@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway';
+    font-size: 0.75em;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+h1, h2, h3 {
+    font-family: 'Lato';
+}
+.cv-container {
+    background: white;
+    overflow: hidden;
+    margin: auto;
+    justify-content: center;
+    position: absolute;
+    width: 80%;
+    max-width: 1160px;
+    top: 10%;
+    
+}
+header {
+    height: 250px;
+    padding-top: 10px;
+    padding: 20px;
+    display: flex;
+    color: white;
+    background-color: rgb(23, 171, 179);
+    align-items: flex-start;
+    text-align: center;
+    align-items: center;
+}
+.infos {
+    width: 1100px;
+}
+.info {
+    margin-left: 10px;
+    margin-top: -50%;
+}
+.info h1 {
+    font-size: 30px;
+    color: white;
+}
+.info h2 {
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+}
+.contact {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;  
+    gap: 10px;
+}
+.map {
+    color: white;
+}
+.map:hover {
+    text-decoration: none;
+}
+.email-link {
+    color: white;
+    text-decoration: none;
+}
+.email-link:hover {
+    text-decoration: underline;
+}
+.tel {
+    color: white;
+}
+.main-content {
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+}
+.left-column {
+    position: relative;
+    background: rgb(227, 227, 227);
+    width: 30%;
+    margin-bottom: 100px;
+    padding-right: 100px;
+    max-height: 80%;
+}
+.left-column h3 {
+    color: rgb(23, 171, 179);
+    margin-bottom: 10px;
+    margin: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+}
+.left-column ul li {
+    margin-bottom: 8px;
+    margin: 20px;
+}
+.left-column p {
+    margin-bottom: 8px;
+    margin: 20px;
+}
+.rating {
+    display: flex;
+    justify-content: right;
+    font-size: 20px;
+    color: rgb(23, 171, 179);
+    margin: 20px;
+}
+.niveau {
+    display: flex;
+    justify-content: flex-end;
+}
+main h2 {
+    color: rgb(23, 171, 179);
+    margin-bottom: 10px;
+}
+.content {
+    flex-direction: column;
+}
+.right-column {
+    justify-content: space-between;
+    width: 70%;
+    position: relative;
+    background: rgb(255, 255, 255); 
+    margin-bottom: 100px;
+    max-height: 80%; 
+}
+/* positionnement de la photo et zoom */
+.photo img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-right: 10px;
+    top: 20px;
+    left: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.photo img {
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.photo img:hover {
+    transform: scale(1.1);
+}
+.photo:active {
+    transform: scale(1.1);
+}
+h2 h3 {
+    color: rgb(23, 171, 179);
+}
+/* style de puce de forme carré  */
+ul {
+    list-style-type: square;
+    margin: 20px;
+}
+ul li::marker {
+    color: rgb(23, 171, 179);
+}
+.text {
+    text-indent: 15px;
+    text-align: justify;
+}
+.right-column h2 {
+    margin-bottom: 10px;  
+    margin: 20px;  
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(227, 227, 227);
+    color: rgb(23, 171, 179);
+}
+.right-column p {
+    margin-bottom: 8px;
+    margin: 20px;
+}
+.date {
+    color: rgb(23, 171, 179);
+    float: right;
+}
+.formations, .experiences {
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+.formations:hover, .experiences:hover {
+    background-color: rgb(227, 227, 227);
+    border-left: 3px solid rgb(23, 171, 179);
+}
+footer {
+    height: 150px;
+    max-width: 1160px;
+    list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(23, 171, 179);
+    color: white;
+}
+.fa-brands {
+    font-size: 4em;
+    color: white;
+}
+.icons {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+.icons:hover {
+    opacity: 0.7;
+}
+.updated {
+    text-align: center;
+    font-size: 0.9em;
+    color: white;
+}
+
